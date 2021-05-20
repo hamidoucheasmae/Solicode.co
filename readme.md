@@ -1,12 +1,12 @@
-# Conception et réalisation de site web : solicode.co
+# Conception et réalisation du site web : solicode.co
 
 Ce projet est réalisé dans le cadre d'un brief projet pendent la formation.
 
-il est réalisé par 
+Réalisation :
 
 - Nom et prénom
 
-Encadrée par 
+Encadrement :
 - ES-SARRAJ Fouad
 - Nom et prénom
 
