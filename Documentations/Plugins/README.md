@@ -4,17 +4,17 @@
 - accordions
 - ajaxform
 - animations
-- counter [GitHub](https://github.com/mhuggins/jquery-countTo)
-- easing [documentation](http://gsgd.co.uk/sandbox/jquery/easing/) 
+- counter 
+- easing  
 - flexslider
-- form [documentation](https://jqueryvalidation.org/)
-- gmap [GitHub](https://github.com/marioestrada/jQuery-gMap) 
+- form 
+- gmap 
 - hover animation
 - html5video
-- isotope [documentation](https://isotope.metafizzy.co) 
+- isotope 
 - jpaginate
 - lazyload
-- lightbox [documentation](http://dimsemenov.com/plugins/magnific-popup/)
+- lightbox 
 - linkscroll
 - onepage 
 - readmore
@@ -28,5 +28,27 @@
  ##### documentation 
 [documentation](http://gsgd.co.uk/sandbox/jquery/easing/) 
  ##### demonstration
-http://gsgd.co.uk/sandbox/jquery/easing/ - automatic!
+[demo](http://gsgd.co.uk/sandbox/jquery/easing/) 
 
+## form
+ ##### documentation 
+[documentation](https://jqueryvalidation.org/documentation/)
+ ##### demonstration
+[demo](https://jqueryvalidation.org/files/demo/) 
+
+## gmap
+ ##### documentation 
+[GitHub](https://github.com/marioestrada/jQuery-gMap) 
+ ##### demonstration
+
+## isotope 
+ ##### documentation 
+[documentation](https://isotope.metafizzy.co) 
+ ##### demonstration
+[demo](https://codepen.io/desandro/pen/nFrte) 
+
+## lightbox 
+ ##### documentation 
+[documentation](https://dimsemenov.com/plugins/magnific-popup/documentation.html) 
+ ##### demonstration
+[demo](http://dimsemenov.com/plugins/magnific-popup/) 
