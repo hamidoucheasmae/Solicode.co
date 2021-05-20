@@ -52,3 +52,10 @@
 [documentation](https://dimsemenov.com/plugins/magnific-popup/documentation.html) 
  ##### demonstration
 [demo](http://dimsemenov.com/plugins/magnific-popup/) 
+
+## mousewheel 
+ ##### documentation 
+[documentation](https://plugins.jquery.com/mousewheel/) 
+ ##### demonstration
+
+ 
