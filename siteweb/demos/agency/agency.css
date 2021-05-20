@@ -1,0 +1,58 @@
+/* ----------------------------------------------------------------
+    Canvas: Agency
+-----------------------------------------------------------------*/
+
+.line,
+#header { border-color: #DDD; }
+
+#header:not(.sticky-header) #header-wrap .header-row {
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+}
+
+@media (min-width: 992px) {
+
+	#header.sticky-header #header {
+		border-color: transparent;
+	}
+
+	.boxed-slider { padding-top: 60px; }
+
+	.menu-container > .menu-item {
+		margin: 0 10px;
+	}
+
+	.menu-container > .menu-item > .menu-link {
+		letter-spacing: 2px;
+	}
+
+}
+
+#footer {
+	background-color: transparent;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#footer .container {
+	border-top: 1px solid #DDD;
+	padding: 50px 0;
+}
+
+#copyrights {
+	background-color: transparent;
+	padding: 0;
+}
+
+
+/* RTL */
+
+@media (min-width: 992px) {
+	body.rtl .primary-menu.style-2 ul li .mega-menu-content {
+		left: 0;
+		right: -15px;
+	}
+	body:not(.device-sm):not(.device-xs):not(.device-xxs).rtl .primary-menu.style-2.center > div > ul { text-align: right; }
+}
+

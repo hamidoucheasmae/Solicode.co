@@ -1,0 +1,16 @@
+// Reboot
+@if $RTL-template == true {
+	html,
+	body {
+	  direction: rtl;
+	  text-align: right;
+	}
+
+	dd {
+	  margin-right: 0;
+	}
+
+	caption {
+	  text-align: right;
+	}
+}

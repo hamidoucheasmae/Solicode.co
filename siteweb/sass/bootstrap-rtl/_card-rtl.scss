@@ -1,0 +1,79 @@
+@if $RTL-template == true {
+  //
+  // Base styles
+  //
+
+  .card-link {
+    + .card-link {
+      margin-right: $card-spacer-x;
+      margin-left: 0;
+    }
+  }
+
+  //
+  // Optional textual caps
+  //
+
+  .card-header {
+    &:first-child {
+      @include border-radius($card-inner-border-radius 0 0 $card-inner-border-radius);
+    }
+  }
+
+  .card-footer {
+    &:last-child {
+      @include border-radius(0 $card-inner-border-radius $card-inner-border-radius 0);
+    }
+  }
+
+
+
+  //
+  // Card groups
+  //
+
+  .card-group {
+
+    @include media-breakpoint-up(sm) {
+      > .card {
+        + .card {
+          margin-right: 0;
+          border-right: 0;
+        }
+
+        // Handle rounded corners
+        @if $enable-rounded {
+          &:not(:last-child) {
+            @include border-left-radius(0);
+
+            .card-img-top,
+            .card-header {
+              // stylelint-disable-next-line property-blacklist
+              border-top-left-radius: 0;
+            }
+            .card-img-bottom,
+            .card-footer {
+              // stylelint-disable-next-line property-blacklist
+              border-bottom-left-radius: 0;
+            }
+          }
+
+          &:not(:first-child) {
+            @include border-right-radius(0);
+
+            .card-img-top,
+            .card-header {
+              // stylelint-disable-next-line property-blacklist
+              border-top-right-radius: 0;
+            }
+            .card-img-bottom,
+            .card-footer {
+              // stylelint-disable-next-line property-blacklist
+              border-bottom-right-radius: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

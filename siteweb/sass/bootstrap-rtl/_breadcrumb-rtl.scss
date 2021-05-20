@@ -1,0 +1,14 @@
+@if $RTL-template == true {
+	.breadcrumb-item {
+	  // The separator between breadcrumbs (by default, a forward-slash: "/")
+	  + .breadcrumb-item {
+	    padding-right: $breadcrumb-item-padding;
+	    padding-left: 0;
+
+	    &::before {
+	      padding-left: $breadcrumb-item-padding;
+	      padding-right: 0;
+	    }
+	  }
+	}
+}
