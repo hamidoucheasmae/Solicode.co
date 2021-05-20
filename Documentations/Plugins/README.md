@@ -19,3 +19,8 @@
 - onepage 
 - readmore
 
+## counter
+ ### documentation 
+[GitHub](https://github.com/mhuggins/jquery-countTo)
+ ### demonstration
+
