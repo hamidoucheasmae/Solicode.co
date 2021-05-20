@@ -20,7 +20,13 @@
 - readmore
 
 ## counter
- ### documentation 
+ ##### documentation 
 [GitHub](https://github.com/mhuggins/jquery-countTo)
- ### demonstration
+ ##### demonstration
+
+## easing 
+ ##### documentation 
+[documentation](http://gsgd.co.uk/sandbox/jquery/easing/) 
+ ##### demonstration
+http://gsgd.co.uk/sandbox/jquery/easing/ - automatic!
 
