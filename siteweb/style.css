@@ -3196,7 +3196,7 @@ html[xmlns] .slider-wrap {
 
 #header-wrap {
 	position: relative;
-	background-color: #FFF;
+	background-color: #37517e !important;
 	width: 100%;
 }
 
@@ -13587,7 +13587,7 @@ h3.titular-title { font-size: 2rem; }
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	color: #333;
+	color: #fff;
 }
 
 .emphasis-title h1,
