@@ -1,3 +1,0 @@
-jQuery Easy Accordion Plugin
-https://www.madeincima.it/resources/jquery-easy-accordion/
-https://www.madeincima.it/en/jquery-plugin-easy-accordion/
