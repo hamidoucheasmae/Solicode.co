@@ -5,7 +5,7 @@
 
 body,
 #content,
-#footer.dark { background-color: #252323; }
+#footer.dark { background-color: #fff; }
 
 @media (min-width: 992px) {
 
