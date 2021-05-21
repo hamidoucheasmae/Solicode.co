@@ -1034,7 +1034,7 @@ var SEMICOLON = SEMICOLON || {};
 
 			let parallaxElHeight	= $sliderParallaxEl.outerHeight(),
 				parallaxElWidth		= $sliderParallaxEl.outerWidth(),
-				slInner				= $sliderParallaxEl.find('.slider-inner'),
+				// slInner				= $sliderParallaxEl.find('.slider-inner'),
 				slSwiperW			= $slider.find('.swiper-wrapper'),
 				slSwiperS			= $slider.find('.swiper-slide').first(),
 				slFlexHeight		= $slider.hasClass('h-auto') || $slider.hasClass('min-vh-0');
