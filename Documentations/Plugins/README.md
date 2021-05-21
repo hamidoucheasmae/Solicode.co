@@ -59,4 +59,7 @@
 [documentation](https://plugins.jquery.com/mousewheel/) 
  ##### demonstration
 
- 
+## flexslider 
+ ##### documentation 
+[documentation](http://flexslider.woothemes.com/) 
+ ##### demonstration
