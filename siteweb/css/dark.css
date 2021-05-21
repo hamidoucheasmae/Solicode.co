@@ -1458,7 +1458,7 @@ body #side-panel.dark {
 .dark #footer,
 #footer.dark {
 	color: rgba(255,255,255,0.75);
-	background-color: #282828;
+	background-color: #37517e;
 	border-top-color: rgba(255,255,255,0.15);
 }
 
@@ -1467,7 +1467,7 @@ body #side-panel.dark {
 }
 
 .dark .footer-widgets-wrap a:hover {
-	color: rgba(255,255,255,0.85);
+	color: #F2B750
 }
 
 .dark #footer .social-icon.si-borderless,
@@ -1487,7 +1487,7 @@ body #side-panel.dark {
 }
 
 .dark .copyright-links a:hover {
-	color: rgba(255,255,255,0.6);
+	color: #F2B750  !important;
 	border-bottom-color: rgba(255,255,255,0.7);
 }
 
