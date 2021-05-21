@@ -22,6 +22,12 @@
 	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
+
+	<!-- Photography Specific Stylesheet -->
+	<link rel="stylesheet" href="demos/photography/photography.css" type="text/css" />
+	<link rel="stylesheet" href="demos/photography/css/photography-addons.css" type="text/css" />
+	<!-- / -->
 
 	<link rel="stylesheet" href="one-page/css/fonts.css" type="text/css" />
 
@@ -122,11 +128,12 @@
 						style="max-width: 700px; font-size: 40px;"> ACTIVIT&Eacute;S</h2>
 				</div>
 				<!-- Image activites start-->
+				<div>
 				<section id="content" class="clearfix" data-scrollto-settings="{&quot;offset&quot;:0,&quot;speed&quot;:1250,&quot;easing&quot;:&quot;easeOutQuad&quot;}">
 
 					<div class="content-wrap">
 						<div class="container dark clearfix">
-							<div class="heading-block dark center border-0">
+							<div class="heading-block dark  border-0">
 								<h3>Recent Images</h3>
 								<span>Click on the photography grids</span>
 							</div>
@@ -481,7 +488,7 @@
 							<div class="preview">
 								<button class="action action-close"><i class="icon-line2-close"></i><span class="text-hidden">Close</span></button>
 								<div class="description description-preview"></div>
-							<img class="original" src="demos/photography/images/items/1.jpg" style="opacity: 0; max-width: calc(50vw - 0px); max-height: calc(100vh - 0px); transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);"><img class="clone" src="file:///C:/Users/admin/Desktop/solicode%20template/themeforest-hT5p7GXX-canvas-the-multipurpose-html5-template/Package-HTML/HTML/demos/photography/images/items/1.jpg" style="opacity: 0; width: 255px; height: 170px; top: 187.333px; left: 91.6667px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);"></div>
+							<img class="clone" src="file:///C:/Users/admin/Desktop/solicode%20template/themeforest-hT5p7GXX-canvas-the-multipurpose-html5-template/Package-HTML/HTML/demos/photography/images/items/1.jpg" style="opacity: 0; width: 255px; height: 170px; top: 187.333px; left: 91.6667px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);"></div>
 						</div>
 		
 						<div class="clear"></div>
@@ -594,6 +601,7 @@
 			</div>
 			
 		</section>
+	</div>
 		<!-- Formation section end -->
 
 
@@ -682,9 +690,75 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/plugins.min.js"></script>
 	<script src="https://maps.google.com/maps/api/js?key=YOUR-API-KEY"></script>
+	<script src="demos/photography/js/photography-addons.js"></script>
+
+	
 
 	<!-- Footer Script -->
 	<script src="js/functions.js"></script>
+
+	<script>
+		(function() {
+			var support = { transitions: Modernizr.csstransitions },
+				// transition end event name
+				transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+				transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+				onEndTransition = function( el, callback ) {
+					var onEndCallbackFn = function( ev ) {
+						if( support.transitions ) {
+							if( ev.target != this ) return;
+							this.removeEventListener( transEndEventName, onEndCallbackFn );
+						}
+						if( callback && typeof callback === 'function' ) { callback.call(this); }
+					};
+					if( support.transitions ) {
+						el.addEventListener( transEndEventName, onEndCallbackFn );
+					}
+					else {
+						onEndCallbackFn();
+					}
+				};
+
+			$('.grid-container').one( 'layoutComplete', function(){
+				new GridFx(document.querySelector('.grid'), {
+					imgPosition : {
+						x : -0.5,
+						y : 1
+					},
+					onOpenItem : function(instance, item) {
+						instance.items.forEach(function(el) {
+							if(item != el) {
+								var delay = Math.floor(Math.random() * 50);
+								el.style.WebkitTransition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+								el.style.transition = 'opacity .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .5s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+								el.style.WebkitTransform = 'scale3d(0.1,0.1,1)';
+								el.style.transform = 'scale3d(0.1,0.1,1)';
+								el.style.opacity = 0;
+							}
+						});
+					},
+					onCloseItem : function(instance, item) {
+						instance.items.forEach(function(el) {
+							if(item != el) {
+								el.style.WebkitTransition = 'opacity .4s, -webkit-transform .4s';
+								el.style.transition = 'opacity .4s, transform .4s';
+								el.style.WebkitTransform = 'scale3d(1,1,1)';
+								el.style.transform = 'scale3d(1,1,1)';
+								el.style.opacity = 1;
+
+								onEndTransition(el, function() {
+									el.style.transition = 'none';
+									el.style.WebkitTransform = 'none';
+								});
+							}
+						});
+					}
+				});
+			});
+
+		})();
+
+	</script>
 
 </body>
 
