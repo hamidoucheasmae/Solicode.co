@@ -64,7 +64,7 @@ h6 > span:not(.nocolor):not(.badge),
 .dark .product-title h3 a:hover,
 .dark .single-product .product-title h2 a:hover,
 .dark .product-price ins,
-.dark .tab-nav-lg li.ui-tabs-active a { color: #37517e; }
+.dark .tab-nav-lg li.ui-tabs-active a { color: #F2B750; }
 
 .color,
 .h-text-color:hover,
@@ -160,13 +160,13 @@ input.switch-toggle-flat:checked + label:after,
 .heading-block.border-color::after,
 .page-item.active .page-link,
 .page-link:focus,
-.dark .cart-product-thumbnail img:hover { border-color: #37517e; }
+.dark .cart-product-thumbnail img:hover { border-color: #F2B750; }
 
 .border-color,
 .process-steps li.active a,
 .process-steps li.ui-tabs-active a,
 .tagcloud a:hover,
-.page-link:hover { border-color: #37517e !important; }
+.page-link:hover { border-color: #F2B750 !important; }
 
 .top-links-sub-menu,
 .top-links-section,
@@ -220,7 +220,7 @@ input.switch-toggle-flat:checked + label:after,
 
 	.sub-menu-container .menu-item:hover > .menu-link,
 	.mega-menu-style-2 .mega-menu-title > .menu-link:hover,
-	.dark .mega-menu-style-2 .mega-menu-title:hover > .menu-link { color: #37517e; }
+	.dark .mega-menu-style-2 .mega-menu-title:hover > .menu-link { color: #F2B750; }
 
 	.style-3 .menu-container > .menu-item.current > .menu-link,
 	.sub-title .menu-container > .menu-item:hover > .menu-link::after,
@@ -243,7 +243,7 @@ input.switch-toggle-flat:checked + label:after,
 	.dark .mega-menu-content,
 	.dark .top-cart-content { border-top-color: #37517e; }
 
-	.dots-menu .page-menu-item div::after { border-left-color: #37517e; }
+	.dots-menu .page-menu-item div::after { border-left-color: #F2B750; }
 	.rtl .dots-menu .page-menu-item div::after {
 		border-left-color: transparent;
 		border-right-color: #37517e;
