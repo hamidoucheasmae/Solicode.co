@@ -1,0 +1,44 @@
+
+
+@import "../variables";
+
+@if $RTL-template {
+/*!
+ 	Bootstrap RTL
+ */
+
+}
+
+@import "mixins/reset-text-rtl";
+@import "mixins/pagination-rtl";
+@import "mixins/lists-rtl";
+@import "mixins/grid-rtl";
+@import "mixins/grid-framework-rtl";
+@import "mixins/forms-rtl";
+@import "mixins/float-rtl";
+@import "mixins/caret-rtl";
+
+@import "reboot-rtl";
+@import "utilities/text-rtl";
+@import "utilities/spacing-rtl";
+@import "utilities/float-rtl";
+@import "utilities/embed-rtl";
+@import "utilities/borders-rtl";
+
+@import "type-rtl";
+@import "alert-rtl";
+@import "breadcrumb-rtl";
+@import "button-group-rtl";
+@import "card-rtl";
+@import "carousel-rtl";
+@import "close-rtl";
+@import "custom-forms-rtl";
+@import "dropdown-rtl";
+@import "forms-rtl";
+@import "input-group-rtl";
+@import "list-group-rtl";
+@import "modal-rtl";
+@import "navbar-rtl";
+@import "pagination-rtl";
+@import "popover-rtl";
+@import "tooltip-rtl"

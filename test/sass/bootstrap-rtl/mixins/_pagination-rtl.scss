@@ -1,0 +1,18 @@
+// Pagination
+
+@mixin pagination-size($padding-y, $padding-x, $font-size, $line-height, $border-radius) {
+  @if $RTL-template == true {
+    .page-item {
+      &:first-child {
+        .page-link {
+          @include border-right-radius($border-radius);
+        }
+      }
+      &:last-child {
+        .page-link {
+          @include border-left-radius($border-radius);
+        }
+      }
+    }
+  }
+}

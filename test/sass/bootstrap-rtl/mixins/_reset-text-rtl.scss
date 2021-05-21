@@ -1,0 +1,6 @@
+@mixin reset-text() {
+	@if $RTL-template == true {
+	  text-align: right; // Fallback for where `start` is not supported
+	  text-align: end;
+	}
+}

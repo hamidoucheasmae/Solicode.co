@@ -1,0 +1,65 @@
+@if $RTL-template == true {
+  // The dropdown menu
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+    float: left;
+  }
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+      .dropdown-menu#{$infix}-left {
+        left: auto;
+        right: 0;
+      }
+
+      .dropdown-menu#{$infix}-right {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  // Allow for dropdowns to go bottom up (aka, dropup-menu)
+  // Just add .dropup after the standard .dropdown class and you're set.
+  .dropright {
+    .dropdown-menu {
+      left: auto;
+      right: 100%;
+      margin-right: $dropdown-spacer;
+      margin-left: 0;
+    }
+
+    .dropdown-toggle {
+      @include caret(left);
+    }
+  }
+
+  .dropleft {
+    .dropdown-menu {
+      left: 100%;
+      right: auto;
+      margin-left: $dropdown-spacer;
+      margin-right: 0;
+    }
+
+    .dropdown-toggle {
+      @include caret(left);
+    }
+  }
+
+  // When enabled Popper.js, reset basic dropdown position
+  // stylelint-disable-next-line no-duplicate-selectors
+  .dropdown-menu {
+    &[x-placement^="top"],
+    &[x-placement^="right"],
+    &[x-placement^="bottom"],
+    &[x-placement^="left"] {
+      left: auto;
+      right: 0;
+    }
+  }
+
+}

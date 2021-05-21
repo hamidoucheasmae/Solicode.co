@@ -1,0 +1,33 @@
+@if $RTL-template == true {
+
+  .tooltip {
+    @include reset-text();
+  }
+
+  .bs-tooltip-right {
+    .arrow {
+      right: 0;
+      left: auto;
+
+      &::before {
+        left: 0;
+        right: auto;
+        border-width: ($tooltip-arrow-width / 2) 0 ($tooltip-arrow-width / 2) $tooltip-arrow-height;
+        border-left-color: $tooltip-arrow-color;
+      }
+    }
+  }
+
+  .bs-tooltip-left {
+    .arrow {
+      left: 0;
+      right: auto;
+      &::before {
+        right: 0;
+        left: auto;
+        border-width: ($tooltip-arrow-width / 2) $tooltip-arrow-height ($tooltip-arrow-width / 2) 0;
+        border-right-color: $tooltip-arrow-color;
+      }
+    }
+  }
+}

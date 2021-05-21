@@ -1,0 +1,51 @@
+@if $RTL-template == true {
+
+  // Optional: Group multiple button groups together for a toolbar
+  .btn-toolbar {
+    justify-content: flex-end;
+  }
+
+  .btn-group {
+    // Prevent double borders when buttons are next to each other
+    > .btn:not(:first-child),
+    > .btn-group:not(:first-child) {
+      margin-right: -$btn-border-width;
+      margin-left: 0;
+    }
+
+    // Reset rounded corners
+    > .btn:not(:last-child):not(.dropdown-toggle),
+    > .btn-group:not(:last-child) > .btn {
+      @include border-left-radius(0);
+    }
+
+    > .btn:not(:first-child),
+    > .btn-group:not(:first-child) > .btn {
+      @include border-right-radius(0);
+    }
+  }
+
+
+  //
+  // Split button dropdowns
+  //
+
+  .dropdown-toggle-split {
+    &::after,
+    .dropup &::after,
+    .dropright &::after {
+      margin-right: 0;
+    }
+
+    .dropleft &::before {
+      margin-left: 0;
+    }
+  }
+  //
+  // Vertical button groups
+  //
+
+  .btn-group-vertical {
+    align-items: flex-end;
+  }
+}

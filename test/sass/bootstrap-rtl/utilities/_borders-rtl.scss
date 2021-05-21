@@ -1,0 +1,27 @@
+// stylelint-disable property-blacklist, declaration-no-important
+
+//
+// Border
+//
+@if $RTL-template == true {
+	.border-right   { border-left: $border-width solid $border-color !important; border-right: 0; }
+	.border-left    { border-right: $border-width solid $border-color !important; border-left: 0;}
+
+	.border-right-0  { border-left: 0 !important; border-right: 0;}
+	.border-left-0   { border-right: 0 !important; border-left: 0;}
+
+
+	.rounded-right {
+	  border-top-left-radius: $border-radius !important;
+	  border-bottom-left-radius: $border-radius !important;
+	  border-top-right-radius: 0 !important;
+	  border-bottom-right-radius: 0 !important;
+	}
+
+	.rounded-left {
+	  border-top-right-radius: $border-radius !important;
+	  border-bottom-right-radius: $border-radius !important;
+	  border-top-left-radius: 0 !important;
+	  border-bottom-left-radius: 0 !important;
+	}
+}
