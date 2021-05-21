@@ -24,11 +24,6 @@
 	animation-fill-mode: both;
 		
 	}
-.animation-up-down{
-	animation: up-down 2s ease-in-out infinite alternate-reverse both;
-	animation-name: up-down;
-
-}	
 
 .animated.infinite {
 	-webkit-animation-iteration-count: infinite;
