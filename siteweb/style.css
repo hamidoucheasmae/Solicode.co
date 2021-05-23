@@ -306,7 +306,7 @@ small { font-family: 'Lato', sans-serif; }
 
 span.middot {
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0 15px;
 }
 
 .double-line { border-top: 3px double #E5E5E5; }
@@ -13986,7 +13986,6 @@ h3.titular-title { font-size: 2rem; }
 	position: fixed;
 	width: 40px;
 	height: 40px;
-	background-color: #333;
 	background-color: rgba(0,0,0,0.3);
 	font-size: 1.25rem;
 	line-height: 36px;
@@ -14008,7 +14007,7 @@ body:not(.device-touch) #gotoTop {
 
 .stretched #gotoTop { bottom: 30px; }
 
-#gotoTop:hover { background-color: #37517e; }
+#gotoTop:hover { background-color: #F2B750; }
 
 
 /* ----------------------------------------------------------------

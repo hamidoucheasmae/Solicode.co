@@ -1477,17 +1477,17 @@ body #side-panel.dark {
 
 .dark #copyrights,
 #copyrights.dark {
-	color: rgba(255,255,255,0.4);
+	color: rgba(255, 255, 255, 0.5);
 	background-color: rgba(0,0,0,0.2);
 }
 
 .dark .copyright-links a {
-	color: rgba(255,255,255,0.4);
+	color: rgb(242, 183, 80,0.8);
 	border-bottom-color: rgba(255,255,255,0.65);
 }
 
 .dark .copyright-links a:hover {
-	color: #F2B750  !important;
+	color: #FFF  !important;
 	border-bottom-color: rgba(255,255,255,0.7);
 }
 
