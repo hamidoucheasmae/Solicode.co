@@ -1,0 +1,33 @@
+@mixin form-validation-state($state, $color, $icon) {
+  @if $RTL-template == true {
+    .form-control {
+      @include form-validation-state-selector($state) {
+        @if $enable-validation-icons {
+          padding-left: $input-height-inner;
+          padding-right: 0;
+          background-position: left $input-height-inner-quarter center;
+        }
+      }
+    }
+
+    // stylelint-disable-next-line selector-no-qualifying-type
+    textarea.form-control {
+      @include form-validation-state-selector($state) {
+        @if $enable-validation-icons {
+          padding-left: $input-height-inner;
+          padding-right: 0;
+          background-position: top $input-height-inner-quarter left $input-height-inner-quarter;
+        }
+      }
+    }
+
+    .custom-select {
+      @include form-validation-state-selector($state) {
+        @if $enable-validation-icons {
+          padding-left: $custom-select-feedback-icon-padding-right;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

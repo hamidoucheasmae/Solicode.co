@@ -1,0 +1,498 @@
+/* ----------------------------------------------------------------
+	Canvas: Yoga
+-----------------------------------------------------------------*/
+
+:root {
+	--header-height: 70px;
+	--themecolor: #7E9680;
+	--themecolorrgba: 126, 150, 128;
+}
+
+/* Custom Header Size
+-----------------------------------------------------------------*/
+.header-size-custom #logo img {
+	height: 70px;
+}
+
+@media (min-width: 992px) {
+
+	.header-size-custom .header-wrap-clone {
+		height: calc( 70px + 1px );
+	}
+
+	#header.header-size-custom + .include-header {
+		margin-top: calc( -70px - 2px );
+	}
+
+	.header-size-custom .menu-container > .menu-item > .menu-link {
+		padding-top: 24px; /* (70px - 22px)/2 */
+		padding-bottom: 24px; /* (70px - 22px)/2 */
+	}
+
+}
+
+.bg-color {
+	background-color: var(--themecolor, #7E9680) !important;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 50px, 0);
+	transform: translate3d(0, 50px, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+	opacity: 0;
+	-webkit-transform: translate3d(0, 50px, 0);
+	transform: translate3d(0, 50px, 0);
+  }
+}
+
+#header .button-link {
+	padding: 8px 14px;
+	background-color: #7E9680;
+	background-color: var(--themecolor, #7E9680);
+	color: #FFF;
+	font-size: 13px;
+	border-radius: 3px;
+	transition: all .4s ease;
+	margin-right: 5px;
+}
+
+.hero-diagonal::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right, rgba(126, 150, 128, 1) 30%, rgba(126, 150, 128, 0.5) 100%);
+	background-image: linear-gradient(to right, rgba(var(--themecolorrgba, 126, 150, 128), 1) 30%, rgba(var(--themecolorrgba, 126, 150, 128), 0.5) 100%);
+	-webkit-clip-path: none;
+	clip-path: none;
+	background-position: center center;
+	background-size: cover;
+	z-index: 2;
+}
+
+.swiper-button-disabled { display: none; }
+
+.slider-arrow-left,
+.slider-arrow-right {
+	width: 50px;
+	height: 50px;
+	background-color: #FFF;
+	border-radius: 50%;
+	left: 20px;
+	right: auto;
+}
+.slider-arrow-right {
+	right: 20px;
+	left: auto;
+}
+
+.slider-arrow-left i,
+.slider-arrow-right i {
+	color: #7E9680;
+	color: var(--themecolor, #7E9680);
+	text-shadow: none;
+	height: 50px;
+	line-height: 48px;
+	margin: 0;
+}
+
+.slider-arrow-right i { margin-right: 2px; }
+
+.feature-box h3 {
+	font-size: 20px;
+	letter-spacing: 0;
+}
+
+.section-img img { width: 100%; border: 10px solid #FFF; }
+
+.section-yogas .card {
+	padding: 35px;
+	background-image: url("images/card-wave-2.svg");
+	background-repeat: repeat-x;
+	background-position: 0% 101%;
+	background-size: cover;
+	-webkit-background-size: auto;
+	-moz-background-size: auto;
+	-o-background-size: auto;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border: 0;
+	border-top: 6px solid #7E9680;
+	border-top-color: var(--themecolor, #7E9680);
+}
+
+.testi-content p {
+	line-height: 1.95;
+	color: rgba(255,255,255, 0.7);
+	font-style: normal;
+}
+
+.play-icon {
+	transition: transform .3s ease;
+}
+
+.play-icon:hover {
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.play-icon i {
+	width: 80px;
+	height: 80px;
+	line-height: 81px;
+	font-size: 28px;
+	padding-left: 5px;
+	text-align: center;
+	border-radius: 50%;
+	color: #000;
+	background-color: #FFF;
+	z-index: 2;
+	transition: all .3s ease;
+}
+
+.play-icon:hover i {
+	background-color: #7E9680;
+	background-color: var(--themecolor, #7E9680);
+	color: #FFF;
+}
+
+.owl-carousel .jumbotron { height: 400px; }
+
+.owl-item .jumbotron {
+	opacity: .5;
+	transform: scale(0.95);
+	transition: all .5s ease;
+}
+
+.owl-item .jumbotron-text {
+	opacity: 0;
+	transform: scale(0.9);
+	transition: all .4s .2s ease;
+}
+
+.owl-item.active .jumbotron,
+.owl-item.active .jumbotron-text {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Owl Carousel - Controls - Arrows
+-----------------------------------------------------------------*/
+#oc-teachers .owl-nav [class*=owl-] {
+	opacity: 1;
+	left: 61px !important;
+	height: 60px;
+	line-height: 60px;
+	border: none;
+	color: #333;
+	background-color: transparent;
+	font-size: 28px;
+	border-radius: 0;
+}
+
+#oc-teachers.owl-nav .owl-next {
+	left: auto;
+	right: -61px;
+}
+
+#oc-teachers .owl-nav .owl-next {
+	left: auto !important;
+	right: 62px !important;
+	border-radius: 0;
+}
+
+#oc-teachers .owl-nav [class*=owl-]:hover {
+	transform: scale(1.3);
+	background-color: transparent !important;
+	color: #7E9680 !important;
+	color: var(--themecolor, #7E9680) !important;
+}
+
+/* Owl Carousel - Responsive
+-----------------------------------------------------------------*/
+.device-md #oc-teachers .owl-nav .owl-prev { left: 67px !important; }
+.device-md #oc-teachers .owl-nav .owl-next { right: 67px !important; }
+
+.device-sm #oc-teachers .owl-nav .owl-prev,
+.device-xs #oc-teachers .owl-nav .owl-prev { left: 27px !important; }
+
+.device-sm #oc-teachers .owl-nav .owl-next,
+.device-xs #oc-teachers .owl-nav .owl-next { right: 27px !important; }
+
+
+.section-schedule .nav-link {
+	position: relative;
+	padding: 15px 20px;
+	font-size: 20px;
+	background-color: #FFF;
+	margin-bottom: 10px;
+	box-shadow: 3px 8px 30px 4px rgba(0, 0, 0, 0.1);
+	font-family: "Sansita", sans-serif;
+	border-left: 5px solid transparent;
+	overflow: hidden;
+	color: #444;
+	transition: all .3s ease;
+}
+
+.section-schedule .nav-pills .nav-link.active {
+	box-shadow: 3px 8px 30px 4px rgba(0, 0, 0, 0.2);
+	border-left-color: #7E9680;
+	background-color: #FFF;
+	color: #7E9680;
+}
+
+.section-schedule .nav-link::after {
+	content: "";
+	position: absolute;
+	opacity: 0;
+	bottom: 0;
+	right: 5px;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 100% 90%;
+	background-size: 50px 50px;
+	transition: all .3s linear;
+	background-image: url("images/yoga-icons/color/svg/asana_lotus_col.svg");
+}
+
+.section-schedule .nav-link.active::after,
+.section-schedule .nav-link:hover::after {
+	opacity: .6;
+	background-position: 100% 70%;
+}
+
+.schedule-wrap {
+	position: relative;
+	padding: 30px;
+	border-radius: 4px;
+	background-color: #FFF;
+	box-shadow: 3px 8px 30px 4px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-wrap::after {
+	content: "";
+	position: absolute;
+	opacity: .07;
+	bottom: 20px;
+	right: 20px;
+	width: 200px;
+	height: 200px;
+	background: #FFF url("images/yoga-icons/color/svg/asana_lotus_col.svg") no-repeat 100% 100% / 100%;
+	z-index: 0;
+}
+
+.schedule-wrap:nth-child(2)::after,
+.section-schedule .nav-link:nth-child(2)::after { background-image: url("images/yoga-icons/color/svg/asana_cobra.svg"); }
+.schedule-wrap:nth-child(3)::after,
+.section-schedule .nav-link:nth-child(3)::after { background-image: url("images/yoga-icons/color/svg/man_well.svg"); }
+.schedule-wrap:nth-child(4)::after,
+.section-schedule .nav-link:nth-child(4)::after { background-image: url("images/yoga-icons/color/svg/mudra_surya.svg"); }
+.schedule-wrap:nth-child(5)::after,
+.section-schedule .nav-link:nth-child(5)::after { background-image: url("images/yoga-icons/color/svg/vishudda_col.svg"); }
+.schedule-wrap:nth-child(6)::after,
+.section-schedule .nav-link:nth-child(6)::after { background-image: url("images/yoga-icons/color/svg/woman_well.svg"); }
+.schedule-wrap:nth-child(7)::after,
+.section-schedule .nav-link:nth-child(7)::after { background-image: url("images/yoga-icons/color/svg/asana_dog_col.svg"); }
+
+.schedule-wrap dt { margin-bottom: 10px; }
+
+.schedule-wrap dt:not(:nth-last-of-type(1)) + dd {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.schedule-wrap dt:nth-last-of-type(1),
+.schedule-wrap dt:nth-last-of-type(1) + dd { margin-bottom: 0px; }
+
+.schedule-time,
+.schedule-desc {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.6;
+}
+
+.schedule-desc small {
+	display: block;
+	font-size: 13px;
+	opacity: .5;
+	margin-top: 4px;
+}
+
+.schedule-teacher {
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	z-index: 2;
+	position: relative;
+}
+
+.countdown.countdown-inline { display: block; }
+
+.countdown-row {
+	margin: 0;
+}
+
+.countdown-section {
+	border-left: 0;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #888;
+	padding: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.countdown-amount {
+	font-size: 17px;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.pricing .btn { transform: translateY(50%); }
+
+.section-price::before {
+	content: '';
+	position: absolute;
+	top: 130px;
+	left: -80px;
+	width: 500px;
+	height: 500px;
+	background: url("images/yoga-icons/color/svg/asana_triangle_col.svg") no-repeat;
+	background-size: 100%;
+	border-radius: 50%;
+	opacity: .06;
+}
+
+.text-title {
+	position: relative;
+	display: block;
+	top: 15px;
+	text-align: center;
+}
+
+.text-title h3 {
+	display: inline;
+	margin-bottom: 0;
+	padding: 0 20px;
+	background-color: #FFF;
+}
+
+.text-title h3 img {
+	display: none;
+}
+
+
+.price-features {
+	border: 1px solid #7E9680;
+	border-color: var(--themecolor, #7E9680);
+	border-radius: 10px;
+}
+
+.price-features > div { padding: 60px; }
+
+.price-features .iconlist li {
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.masonry-thumbs .grid-item {
+	display: block;
+	border-right: 2px solid #FFF;
+	border-bottom: 2px solid #FFF;
+	padding: 0;
+	border-radius: 4px;
+}
+
+.masonry-thumbs .grid-item img {
+	-webkit-transform: scale(1.05) translateX(-2px) translateY(-2px);
+	transform:  scale(1.05) translateX(-2px) translateY(-2px);
+	-webkit-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+	padding: 0;
+}
+
+.masonry-thumbs .grid-item:hover img {
+	-webkit-transform: scale(1.05) translateX(2px) translateY(2px);
+	transform: scale(1.05) translateX(2px) translateY(2px);
+	-webkit-filter: sepia(0) saturate(1.3);
+	filter: sepia(0) saturate(1.3);
+	opacity: .9;
+}
+
+.yoga-video .play-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -40px;
+	margin-left: -40px;
+}
+
+#footer::after {
+	content: '';
+	position: absolute;
+	opacity: .15;
+	right: 0;
+	top: 0;
+	width: 700px;
+	height: 100%;
+	background-image: url('images/footer.svg');
+	background-repeat: no-repeat;
+	background-position: 100% 90%;
+	background-size: 700px auto;
+}
+
+#footer > div {
+	position: relative;
+	z-index: 1;
+}
+
+/* Responsive Device more than 992px (.device-md >)
+-----------------------------------------------------------------*/
+@media (min-width: 992px) {
+
+	.hero-diagonal::before {
+		width: 60%;
+		-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+		clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+	}
+
+	.section-img {
+		display: block;
+		position: absolute;
+		top: -30px;
+		right: 0;
+		width: 52%;
+		height: 100%;
+	}
+
+	.section-img .section-img-sm {
+		position: absolute;
+		top: auto;
+		bottom: -30px;
+		left: -40px;
+		right: auto;
+		width: 360px;
+		height: auto;
+	}
+
+	.schedule-wrap dt { margin-bottom: 20px; }
+
+	.text-title h3 img {
+		display: inline-block;
+		position: relative;
+		margin-right: 10px;
+		top: -1px;
+	}
+
+}

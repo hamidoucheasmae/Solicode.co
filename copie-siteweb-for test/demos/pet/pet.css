@@ -1,0 +1,170 @@
+/* ----------------------------------------------------------------
+	Canvas: Pet
+-----------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+
+	.menu-container > .menu-item > .menu-link {
+		font-weight: 500;
+		text-transform: none;
+		font-size: 16px;
+	}
+
+	.dark #header-wrap:not(.not-dark) .menu-container > .menu-item > .menu-link,
+	#header.sticky-header:not(.static-sticky) .menu-container > .menu-item.bg-color > .menu-link { color: #FFF; }
+
+	.dark #header-wrap:not(.not-dark) .menu-container > .menu-item.bg-color {
+		margin-left: 10px;
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;
+	}
+
+}
+
+@media (max-width: 991.98px) {
+
+	.menu-item.bg-color {
+		background-color: transparent !important;
+	}
+
+}
+
+.contact-properties [class^=col-] > a,
+.product .product-image,
+.button,
+.feature-box.media-box.fbox-bg {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	box-shadow: 0 1px 1px 0 rgba(10, 16, 34, .2);
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    border-radius: 5px;
+}
+
+.contact-properties [class^=col-] > a:hover,
+.product:hover .product-image,
+.button:hover,
+.feature-box.media-box.fbox-bg:hover {
+	box-shadow: 0 10px 30px -5px rgba(10, 16, 34, .2);
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.feature-box h3 { font-size: 17px; }
+
+.feature-box h3 span.subtitle { font-size: 14px; }
+
+/* Button-link
+-----------------------------------------------------------------*/
+.button-link {
+	display: inline-block;
+	position: relative;
+	color: #333;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+	margin-top: 10px;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.dark .button-link { color: #FFF; }
+.dark .button-link:hover { color: #f0a540; }
+
+.oc-item .testimonial {
+	margin-left: 1px;
+	margin-bottom: 2px;
+	border: 0;
+	border-top: 1px solid #EEE;
+	box-shadow: 0 1px 1px 0 rgba(10, 16, 34, .2);
+}
+
+.testi-content p {
+	font-style: normal;
+	font-weight: 500;
+	color: #666;
+}
+
+.testi-meta {
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+
+.testi-meta span {
+	display: inline-block;
+	letter-spacing: 0;
+	font-weight: 500;
+	padding-left: 0;
+}
+
+.contact-properties [class^=col-] {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.contact-properties [class^=col-] > a {
+	display: block;
+	position: relative;
+	height: 300px;
+	border-radius: 8px;
+	background-color: #EEE;
+}
+
+.contact-properties [class^=col-] img { display: block; }
+
+.contact-properties [class^=col-] > a::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 8px;
+	opacity: 0.4;
+	-webkit-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+}
+
+.contact-properties [class^=col-] > a:hover::before { opacity: 1; }
+
+.contact-properties [class^=col-] > a .heading-block h3::after {
+	content: "";
+	border-style: solid;
+	border-color: #FFF;
+	display: inline-block;
+	position: absolute;
+	top: auto;
+	bottom: 50%;
+	width: 40px;
+	height: 4px;
+	border-radius: 10px;
+	left: 50%;
+	right: auto;
+	margin-left: -20px;
+	opacity: 1;
+	-webkit-transition: opacity .35s,-webkit-transform .35s;
+	-moz-transition: opacity .35s,-webkit-transform .35s;
+	transition: opacity .35s,transform .35s;
+	-webkit-transform: scale(0,1);
+	-moz-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.contact-properties [class^=col-] > a:hover .heading-block h3::after {
+	opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+

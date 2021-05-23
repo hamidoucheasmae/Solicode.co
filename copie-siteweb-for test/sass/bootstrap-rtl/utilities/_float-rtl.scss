@@ -1,0 +1,11 @@
+// stylelint-disable declaration-no-important
+@if $RTL-template == true {
+	@each $breakpoint in map-keys($grid-breakpoints) {
+	  @include media-breakpoint-up($breakpoint) {
+	    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+	    .float#{$infix}-left  { float: right !important; }
+	    .float#{$infix}-right { float: left !important; }
+	  }
+	}
+}

@@ -1,0 +1,23 @@
+@if $RTL-template == true {
+
+	// Container that the modal scrolls within
+	.modal {
+	  right: 0;
+	  left: 0;
+	}
+
+	// Modal background
+	.modal-backdrop {
+	  position: fixed;
+	  right: 0;
+	  left: auto;
+	}
+
+	// Modal header
+	// Top section of the modal w/ title and dismiss
+	.modal-header {
+	  .close {
+	    margin: (-$modal-header-padding-y) auto (-$modal-header-padding-y) (-$modal-header-padding-x);
+	  }
+	}
+}

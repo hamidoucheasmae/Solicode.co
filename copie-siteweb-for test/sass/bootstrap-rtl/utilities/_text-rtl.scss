@@ -1,0 +1,15 @@
+// stylelint-disable declaration-no-important
+
+//
+// Text
+//
+@if $RTL-template == true {
+	@each $breakpoint in map-keys($grid-breakpoints) {
+	  @include media-breakpoint-up($breakpoint) {
+	    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+	    .text#{$infix}-left   { text-align: right !important; }
+	    .text#{$infix}-right  { text-align: left !important; }
+	  }
+	}
+}

@@ -1,0 +1,22 @@
+@if $RTL-template == true {
+	//
+	// Lists
+	//
+
+	.list-unstyled {
+	  @include list-unstyled();
+	}
+
+	// Inline turns list items into inline-block
+	.list-inline {
+	  @include list-unstyled();
+	}
+
+	// Inline turns list items into inline-block
+	.list-inline-item {
+	  &:not(:last-child) {
+	    margin-left: $list-inline-padding;
+	    margin-right: 0;
+	  }
+	}
+}

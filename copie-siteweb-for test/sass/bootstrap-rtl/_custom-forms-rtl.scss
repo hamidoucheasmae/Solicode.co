@@ -1,0 +1,110 @@
+@if $RTL-template == true {
+
+  // Checkboxes and radios
+  //
+  // Base class takes care of all the key behavioral aspects.
+
+  .custom-control {
+    padding-right: $custom-control-gutter + $custom-control-indicator-size;
+    padding-left: 0;
+  }
+
+  .custom-control-inline {
+    margin-left: $custom-control-spacer-x;
+    margin-right: 0;
+  }
+
+  .custom-control-input {
+    right: 0;
+    left: auto;
+  }
+
+  // Custom control indicators
+  //
+  // Build the custom controls out of pseudo-elements.
+
+  .custom-control-label {
+    // Background-color and (when enabled) gradient
+    &::before {
+      right: -($custom-control-gutter + $custom-control-indicator-size);
+      left: auto;
+    }
+
+    // Foreground (icon)
+    &::after {
+      right: -($custom-control-gutter + $custom-control-indicator-size);
+      left: auto;
+    }
+  }
+
+
+  // switches
+  //
+  // Tweak a few things for switches
+
+  .custom-switch {
+    padding-right: $custom-switch-width + $custom-control-gutter;
+    padding-left: 0;
+
+    .custom-control-label {
+      &::before {
+        right: -($custom-switch-width + $custom-control-gutter);
+        left: auto;
+      }
+
+      &::after {
+        right: add(-($custom-switch-width + $custom-control-gutter), $custom-control-indicator-border-width * 2);
+        left: auto;
+      }
+    }
+  }
+
+
+  // Select
+  .custom-select {
+    &[multiple],
+    &[size]:not([size="1"]) {
+      padding-left: $custom-select-padding-x;
+      padding-right: 0;
+    }
+  }
+
+  .custom-select-sm {
+    padding-right: $custom-select-padding-x-sm;
+    padding-left: 0;
+  }
+
+  .custom-select-lg {
+    padding-right: $custom-select-padding-x-lg;
+    padding-left: 0;
+  }
+
+
+  // File
+  //
+  // Custom file input.
+
+  .custom-file-label {
+    &::after {
+      left: 0;
+      right: auto;
+      border-right: inherit;
+      border-left: 0;
+      @include border-radius(0 0 $custom-file-border-radius $custom-file-border-radius);
+    }
+  }
+
+  // Range
+  //
+  // Style range inputs the same across browsers. Vendor-specific rules for pseudo
+  // elements cannot be mixed. As such, there are no shared styles for focus or
+  // active states on prefixed selectors.
+
+  .custom-range {
+
+    &::-ms-fill-upper {
+      margin-left: 15px; // arbitrary?
+      margin-right: 0;
+    }
+  }
+}

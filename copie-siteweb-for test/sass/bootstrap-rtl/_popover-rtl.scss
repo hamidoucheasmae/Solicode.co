@@ -1,0 +1,64 @@
+@if $RTL-template == true {
+  .popover {
+    right: 0;
+    left: auto;
+    @include reset-text();
+  }
+
+  .bs-popover-right {
+    margin-right: $popover-arrow-height;
+    margin-left: 0;
+
+    > .arrow {
+      right: subtract(-$popover-arrow-height, $popover-border-width);
+      left: auto;
+      &::before {
+        right: 0;
+        left: auto;
+        border-width: ($popover-arrow-width / 2) 0 ($popover-arrow-width / 2) $popover-arrow-height;
+        border-left-color: $popover-arrow-outer-color;
+      }
+
+      &::after {
+        right: $popover-border-width;
+        border-width: ($popover-arrow-width / 2) 0 ($popover-arrow-width / 2) $popover-arrow-height;
+        border-left-color: $popover-arrow-color;
+      }
+    }
+  }
+
+  .bs-popover-bottom {
+
+    // This will remove the popover-header's border just below the arrow
+    .popover-header::before {
+      right: 50%;
+      left: auto;
+      margin-right: -$popover-arrow-width / 2;
+      margin-left: 0;
+    }
+  }
+
+  .bs-popover-left {
+    margin-left: $popover-arrow-height;
+    margin-right: 0;
+
+    > .arrow {
+      left: subtract(-$popover-arrow-height, $popover-border-width);
+      right: auto;
+
+      &::before {
+        left: 0;
+        right: auto;
+        border-width: ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2) 0;
+        border-right-color: $popover-arrow-outer-color;
+      }
+
+      &::after {
+        left: $popover-border-width;
+        right: auto;
+        border-width: ($popover-arrow-width / 2) $popover-arrow-height ($popover-arrow-width / 2) 0;
+        border-right-color: $popover-arrow-color;
+      }
+    }
+  }
+}

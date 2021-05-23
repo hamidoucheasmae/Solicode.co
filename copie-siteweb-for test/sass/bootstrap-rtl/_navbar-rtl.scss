@@ -1,0 +1,15 @@
+@if $RTL-template == true {
+	.navbar-brand {
+	  margin-left: $navbar-padding-x;
+	  margin-right: 0;
+	}
+
+
+	// Navbar nav
+	//
+	// Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).
+
+	.navbar-nav {
+	  padding-right: 0;
+	}
+}

@@ -1,0 +1,44 @@
+@if $RTL-template == true {
+
+  // Checkboxes and radios
+  //
+  // Indent the labels to position radios/checkboxes as hanging controls.
+
+  .form-check {
+    padding-right: $form-check-input-gutter;
+    padding-left: 0;
+  }
+
+  .form-check-input {
+    margin-right: -$form-check-input-gutter;
+    margin-left: 0;
+  }
+
+
+  .form-check-inline {
+    padding-right: 0; // Override base .form-check
+    margin-left: $form-check-inline-margin-x;
+    margin-right: 0;
+
+    // Undo .form-check-input defaults and add some `margin-right`.
+    .form-check-input {
+      margin-left: $form-check-inline-input-margin-x;
+      margin-right: 0;
+      margin-right: 0;
+    }
+  }
+  .form-inline {
+    @include media-breakpoint-up(sm) {
+
+      // Remove default margin on radios/checkboxes that were used for stacking, and
+      // then undo the floating of radios and checkboxes to match.
+      .form-check {
+        padding-right: 0;
+      }
+      .form-check-input {
+        margin-left: $form-check-input-margin-x;
+        margin-right: 0;
+      }
+    }
+  }
+}

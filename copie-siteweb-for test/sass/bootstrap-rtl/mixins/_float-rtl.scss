@@ -1,0 +1,10 @@
+@mixin float-left() {
+	@if $RTL-template == true {
+ 		float: right !important;
+ 	}
+}
+@mixin float-right() {
+	@if $RTL-template == true {
+  		float: left !important;
+  	}
+}
