@@ -19,6 +19,7 @@
 - onepage 
 - readmore
 - youtube overlay
+- aos
 
 ## counter
  ##### documentation 
@@ -62,4 +63,9 @@
 ## flexslider 
  ##### documentation 
 [documentation](http://flexslider.woothemes.com/) 
+ ##### demonstration
+
+## AOS
+ ##### documentation 
+[documentation](https://michalsnik.github.io/aos/) 
  ##### demonstration
