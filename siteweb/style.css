@@ -8986,6 +8986,7 @@ body:not(.device-touch) .button {
 	margin-right: 5px;
 	width: 16px;
 	text-align: center;
+	font-weight: 700;
 }
 
 .button.text-right i { margin: 0 0 0 5px; }
