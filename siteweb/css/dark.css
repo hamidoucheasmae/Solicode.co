@@ -1458,7 +1458,7 @@ body #side-panel.dark {
 .dark #footer,
 #footer.dark {
 	color: rgba(255,255,255,0.75);
-	background-color: #37517e;
+	background-color: #024873;
 	border-top-color: rgba(255,255,255,0.15);
 }
 
@@ -1467,22 +1467,22 @@ body #side-panel.dark {
 }
 
 .dark .footer-widgets-wrap a:hover {
-	color: #F2B750
+	color: #F2B705
 }
 
 .dark #footer .social-icon.si-borderless,
 #footer.dark .social-icon.si-borderless {
-	color: rgba(255,255,255,0.5) !important;
+	color: rgba(255, 255, 255, 0.801) !important;
 }
 
 .dark #copyrights,
 #copyrights.dark {
-	color: rgba(255, 255, 255, 0.5);
-	background-color: rgba(0,0,0,0.2);
+	color: #F2F2F2;
+	background-color:rgb(2, 72, 115);
 }
 
 .dark .copyright-links a {
-	color: rgb(242, 183, 80,0.8);
+	color: rgb(242, 183, 5);
 	border-bottom-color: rgba(255,255,255,0.65);
 }
 
