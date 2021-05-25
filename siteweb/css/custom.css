@@ -4,3 +4,10 @@
 	Add all your Custom Styled CSS here for New Styles or
 	Overwriting Default Theme Styles for Better Handling Updates
 -----------------------------------------------------------------*/
+
+.pt-ocp{
+padding-top:2rem ;
+}
+.pt-simplon{
+	padding-top:1.6rem ;
+	}
