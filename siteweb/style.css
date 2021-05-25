@@ -14538,7 +14538,7 @@ button.toast-close-button {
 	border-bottom: 0 !important;
 }
 
-#copyrights a:first-child { margin-left: 0; }
+#copyrights a:first-child { margin-left: 0; color:#F2F2F2 }
 
 #copyrights.text-right a:last-child { margin-right: 0; }
 
