@@ -9051,8 +9051,8 @@ body:not(.device-touch) .button {
 }
 
 .button.button-border.button-light:hover {
-	background-color: #FFF;
-	color: #333;
+	background-color: #F2B705;
+	color: #FFF;
 	text-shadow: none;
 }
 
@@ -13141,7 +13141,6 @@ blockquote.float-right {
 	content: "";
 	display: block;
 	opacity: 0.6;
-	background-color: #000;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	border-radius: 6px;
@@ -14505,7 +14504,6 @@ button.toast-close-button {
 }
 
 #copyrights {
-	padding: 40px 0;
 	background-color: #DDD;
 	font-size: 15px;
 	line-height: 1.8;
