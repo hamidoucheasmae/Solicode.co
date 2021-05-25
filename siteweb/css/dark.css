@@ -1458,7 +1458,7 @@ body #side-panel.dark {
 .dark #footer,
 #footer.dark {
 	color: rgba(255,255,255,0.75);
-	background-color: #024873;
+	background-color: #3945ba;
 	border-top-color: rgba(255,255,255,0.15);
 }
 
@@ -1478,7 +1478,7 @@ body #side-panel.dark {
 .dark #copyrights,
 #copyrights.dark {
 	color: #F2F2F2;
-	background-color:rgb(2, 72, 115);
+	background-color:rgb(57, 69, 186);
 }
 
 .dark .copyright-links a {
