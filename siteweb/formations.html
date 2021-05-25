@@ -34,6 +34,39 @@
 	<title>Solicode</title>
 
 
+	<style>
+
+		.grid-filter.flex-column {
+			border: 1px solid rgba(0,0,0,0.07);
+			border-radius: 4px;
+		}
+
+		.grid-filter.flex-column,
+		.grid-filter.flex-column li {
+			width: 100%;
+		}
+
+		.grid-filter.flex-column li a {
+			padding: 14px 20px;
+			font-size: 0.9375rem;
+			text-align: left;
+			border-left: 0;
+			border-radius: 0;
+			border-bottom: 1px solid rgba(0,0,0,0.07);
+		}
+
+		.grid-filter.flex-column li:first-child a {
+			border-radius: 4px 4px 0 0;
+		}
+
+		.grid-filter.flex-column li:last-child a {
+			border-bottom: 0;
+			border-radius: 0 0 4px 4px;
+		}
+
+	</style>
+
+
 
 </head>
 
@@ -291,9 +324,8 @@
 
 				<div class="row justify-content-center gutter-50">
 					<div class="col-xl-6 col-lg-8 text-center mb-6">
-						<h2 class="mx-auto bottommargin font-body fancy-title title-border title-center"
-					style="max-width: 700px; font-size: 40px;">Nos filières de formation</h2>
-				
+						<p class="mb-2 text-info text-uppercase ls2 text-smaller">How can we help you?</p>
+						<h3 class="h1 font-weight-bold mb-3">Frequently Asked Questions</h3>
 					</div>
 
 					<div class="clear"></div>
@@ -305,13 +337,10 @@
 						<div class="grid-filter-wrap">
 							<ul class="grid-filter flex-column align-items-start customjs shadow-sm">
 
-								<li class=""><a href="#" class="font-weight-semibold" data-filter="all">All</a></li>
-								<li class="activeFilter"><a href="#" class="font-weight-semibold" data-filter=".faq-marketplace">Marketplace</a></li>
+								
+								<li><a href="#" class="font-weight-semibold" data-filter=".faq-marketplace">Marketplace</a></li>
 								<li><a href="#" class="font-weight-semibold" data-filter=".faq-authors">Authors</a></li>
-								<li><a href="#" class="font-weight-semibold" data-filter=".faq-legal">Legal</a></li>
-								<li><a href="#" class="font-weight-semibold" data-filter=".faq-itemdiscussion">Item Discussion</a></li>
-								<li><a href="#" class="font-weight-semibold" data-filter=".faq-affiliates">Affiliates</a></li>
-								<li><a href="#" class="font-weight-semibold" data-filter=".faq-miscellaneous">Miscellaneous</a></li>
+							
 
 							</ul>
 						</div>
@@ -324,7 +353,7 @@
 						============================================= -->
 						<div id="faqs" class="faqs">
 
-							<div class="toggle faq pb-3 mb-3 faq-marketplace faq-authors" style="">
+							<div class="toggle faq pb-3 mb-3 faq-marketplace faq-authors">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-question-sign"></i>
@@ -338,10 +367,10 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
-							<div class="toggle faq pb-3 mb-3 faq-authors faq-miscellaneous" style="display: none;">
+							<div class="toggle faq pb-3 mb-3 faq-authors faq-miscellaneous">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-comments-alt"></i>
@@ -355,10 +384,10 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
-							<div class="toggle faq pb-3 mb-3 faq-miscellaneous" style="display: none;">
+							<div class="toggle faq pb-3 mb-3 faq-miscellaneous">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-lock3"></i>
@@ -372,10 +401,10 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
-							<div class="toggle faq pb-3 mb-3 faq-authors faq-legal faq-itemdiscussion" style="display: none;">
+							<div class="toggle faq pb-3 mb-3 faq-authors faq-legal faq-itemdiscussion">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-download-alt"></i>
@@ -389,10 +418,10 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
-							<div class="toggle faq pb-3 mb-3 faq-marketplace faq-authors" style="">
+							<div class="toggle faq pb-3 mb-3 faq-marketplace faq-authors">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-ok"></i>
@@ -406,10 +435,10 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
-							<div class="toggle faq pb-3 mb-3 faq-affiliates faq-miscellaneous" style="display: none;">
+							<div class="toggle faq pb-3 mb-3 faq-affiliates faq-miscellaneous">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-money"></i>
@@ -423,10 +452,10 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
-							<div class="toggle faq pb-3 mb-3 faq-legal faq-itemdiscussion" style="display: none;">
+							<div class="toggle faq pb-3 mb-3 faq-legal faq-itemdiscussion">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-picture"></i>
@@ -440,10 +469,10 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
-							<div class="toggle faq pb-3 mb-3 faq-legal faq-authors faq-itemdiscussion" style="display: none;">
+							<div class="toggle faq pb-3 mb-3 faq-legal faq-authors faq-itemdiscussion">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-file3"></i>
@@ -457,10 +486,10 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
-							<div class="toggle faq pb-3 mb-3 faq-affiliates" style="display: none;">
+							<div class="toggle faq pb-3 mb-3 faq-affiliates">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-bar-chart"></i>
@@ -474,10 +503,10 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
-							<div class="toggle faq pb-3 mb-3 faq-authors faq-itemdiscussion" style="display: none;">
+							<div class="toggle faq pb-3 mb-3 faq-authors faq-itemdiscussion">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-phone3"></i>
@@ -491,10 +520,10 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
-							<div class="toggle faq pb-3 mb-3 faq-marketplace faq-itemdiscussion" style="">
+							<div class="toggle faq pb-3 mb-3 faq-marketplace faq-itemdiscussion">
 								<div class="toggle-header">
 									<div class="toggle-icon">
 										<i class="toggle-closed icon-credit"></i>
@@ -508,7 +537,7 @@
 										<i class="toggle-open icon-line-chevron-up"></i>
 									</div>
 								</div>
-								<div class="toggle-content pl-4" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+								<div class="toggle-content pl-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
 							</div>
 
 						</div>
@@ -663,6 +692,39 @@
 		  visibleItems: 2
 		});
 	  </script>
+	  <script>
+		jQuery(document).ready(function($){
+			var $faqItems = $('#faqs .faq');
+			if( window.location.hash != '' ) {
+				var getFaqFilterHash = window.location.hash;
+				var hashFaqFilter = getFaqFilterHash.split('#');
+				if( $faqItems.hasClass( hashFaqFilter[1] ) ) {
+					$('.grid-filter li').removeClass('activeFilter');
+					$( '[data-filter=".'+ hashFaqFilter[1] +'"]' ).parent('li').addClass('activeFilter');
+					var hashFaqSelector = '.' + hashFaqFilter[1];
+					$faqItems.css('display', 'none');
+					if( hashFaqSelector != 'all' ) {
+						$( hashFaqSelector ).fadeIn(500);
+					} else {
+						$faqItems.fadeIn(500);
+					}
+				}
+			}
+
+			$('.grid-filter a').on( 'click', function(){
+				$('.grid-filter li').removeClass('activeFilter');
+				$(this).parent('li').addClass('activeFilter');
+				var faqSelector = $(this).attr('data-filter');
+				$faqItems.css('display', 'none');
+				if( faqSelector != 'all' ) {
+					$( faqSelector ).fadeIn(500);
+				} else {
+					$faqItems.fadeIn(500);
+				}
+				return false;
+		   });
+		});
+	</script>
 </body>
 
 </html>
