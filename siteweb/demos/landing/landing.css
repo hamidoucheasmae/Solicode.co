@@ -3,7 +3,7 @@
 -----------------------------------------------------------------*/
 
 :root {
-	--themecolor: #3D80E4;
+	--themecolor: #3945ba;
 	--secondary-color: #FF3A33;
 	--themecolorrgba: 61,128,228;
 }
@@ -44,7 +44,7 @@
 
 .sub-menu-container .menu-item > .menu-link i {
 	margin-right: 15px;
-	color: var(--themecolor, #3D80E4);
+	color: var(--themeco3945ba);
 	font-size: 18px;
 }
 
@@ -129,7 +129,7 @@
 
 .features-items .feature-box .fbox-icon i {
 	background-color: transparent !important;
-	color: var(--themecolor, #3D80E4);
+	color: var(--themeco3945ba);
 	font-size: 42px;
 	font-size: var(--f-icon-size);
 }
@@ -270,7 +270,7 @@
 	background-size: 12px 12px;
 	background-position: center;
 	transform: translate(-50%, -50%);
-	background-image: radial-gradient(#3D80E4 14%, transparent 14%);
+	background-image: radial-grad3945ba 14%, transparent 14%);
 	-webkit-mask-image: radial-gradient(rgba(0,0,0,1),rgba(0,0,0,0) 75%);
 	mask-image: radial-gradient(rgba(0,0,0,1),rgba(0,0,0,0) 75%);
 	z-index: 0;
