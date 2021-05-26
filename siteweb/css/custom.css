@@ -12,6 +12,6 @@ padding-top:2rem ;
 	padding-top:1.6rem ;
 	}
 
-#copyrights a:first-child:hover {
-	color: #f2b705;
+#copyrights a:hover {
+	color: #f2b705 !important;
 }
