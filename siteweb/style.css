@@ -9489,7 +9489,7 @@ body:not(.device-touch) .button.button-full strong {
 	border-color: #EB9C4D;
 }
 
-.button-black:not(.button-border) { background-color: #111 !important; }
+.button-black:not(.button-border) { background-color: #3945ba !important; }
 .button-3d.button-black:hover,
 .button-reveal.button-black:hover,
 .button-border.button-black:hover,
@@ -10032,7 +10032,7 @@ body:not(.device-touch) .button.button-full strong {
 	top: -3px;
 	left: -3px;
 	padding: 3px;
-	box-shadow: 0 0 0 2px #333;
+	box-shadow: 0 0 0 2px #3945ba;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
 	-webkit-transform: scale(.8);
 	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
@@ -10045,7 +10045,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .fbox-effect .fbox-icon i:hover,
 .fbox-effect:hover .fbox-icon i {
-	background-color: #333;
+	background-color: #3945ba;
 	color: #FFF;
 }
 
@@ -10409,7 +10409,7 @@ body:not(.device-touch) .social-icon {
 	text-shadow: 1px 1px 1px #FFF;
 }
 
-.i-plain:hover { color: #777; }
+.i-plain:hover { color: #3945ba; }
 
 .i-circled { border-radius: 50%; }
 
