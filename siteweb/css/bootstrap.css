@@ -130,6 +130,7 @@ blockquote {
 b,
 strong {
 	font-weight: bolder;
+	border-bottom: 1px dotted #444
 }
 
 small {

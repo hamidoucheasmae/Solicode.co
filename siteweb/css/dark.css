@@ -14,7 +14,7 @@
 }
 
 .dark a:not([class*="btn-"]):hover {
-	color: #EEE;
+	color: #F2B705;
 }
 
 body.dark,
