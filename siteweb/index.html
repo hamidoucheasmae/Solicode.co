@@ -25,6 +25,8 @@
 	<link rel="stylesheet" href="one-page/css/et-line.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/youtube-overlay.css" type="text/css" />
+	
 
 	<link rel="stylesheet" href="one-page/css/fonts.css" type="text/css" />
 
@@ -209,8 +211,8 @@
 												<div data-aos="fade-right"class="col-lg-6 p-0">
 													<!-- Youtube Video Link
 													============================================= -->
-													<a href="images/videos/explore.mp4" data-lightbox="iframe">
-														<img src="demos/business/images/sections/video2.jpg" alt="Youtube Video" style="box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15); border-radius: 6px;">
+													
+														<img id="solicodevid" src="demos/business/images/sections/video2.jpg" data-videourl="https://www.youtube.com/embed/sp6Dnvjm-s8" alt="Youtube Video" style="box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15); border-radius: 6px;">
 														<i class="icon-play" style="position: absolute; top: 50%; left: 50%; font-size: 60px; color: #fff; margin-top: -45px; margin-left: -23px"></i>
 													</a>
 												</div>
@@ -687,6 +689,7 @@
 	<script src="js/plugins.min.js"></script>
 	<script src="https://maps.google.com/maps/api/js?key=YOUR-API-KEY"></script>
 	<script src="js/aos.js"></script>
+	<script src="js/youtube-overlay.js"></script>
 
 	<!-- Footer Script -->
 	<script src="js/functions.js"></script>
@@ -694,7 +697,21 @@
 	<script>
 		AOS.init();
 	</script>
-
+<!-- video youtube -->
+<script>
+	var img = $("#solicodevid ");
+  var configObject = {
+	sourceUrl: img.attr("data-videourl"),
+	triggerElement: "#" + img.attr("id"),
+	progressCallback: function() {
+	  console.log("Callback Invoked.");
+	}
+  };
+  
+  var videoBuild = new YoutubeOverlayModule(configObject);
+	videoBuild.activateDeployment();
+  </script>
 </body>
 
 </html>
+
