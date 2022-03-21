@@ -1,5 +1,7 @@
 # Conception et réalisation du site web : solicode.co
 
+<img src="https://raw.githubusercontent.com/hamidoucheasmae/solicode.co/master/SOLICODEMockup.png" alt=" ">
+
 Ce projet est réalisé dans le cadre d'un brief projet pendent la formation.
 
 Réalisation :
